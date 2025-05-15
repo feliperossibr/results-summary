@@ -105,8 +105,7 @@ ul {
   background-color: #ffffff;
   border-radius: 2rem;
   padding: 1.5rem;
-  min-width: 100%;
-
+  width: 32rem;
 }
 
 .white-card h3 {
