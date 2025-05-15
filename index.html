@@ -5,48 +5,79 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: #3e52a3; }
-  </style>
   <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
   <main>
-    <div class="content">
-        <div class="blue-card">
-          <header>Your Result</header>
-          <div class="circle">
-            <h1>76</h1>
-            <small>of 100</small>
-          </div>
+    <div class="cards-wrapper">
+      <div class="blue-card">
+        <header>
+          <h2>Your Result</h2>
+        </header>
+        <div id="circle">
+          <h1>76</h1>
+          <small>of 100</small>
+        </div>
+        <div id="description">
           <h2>Great</h2>
-          <p>You scored higher than 65% of the people who have taken these tests.</p>
+          <p>
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
         </div>
-      
-        <div class="white-card">
-          Summary
-          Reaction
-          80 / 100
-          Memory
-          92 / 100
-          Verbal
-          61 / 100
-          Visual
-          72 / 100
-          Continue
-        </div>
-    </div>
+      </div>
+
+      <div class="white-card">
+        <h3>Summary</h3>
+        <ul role="list">
+          <li class="flex" id="reaction">
+            <div class="left">
+              <img src="assets/images/icon-reaction.svg" alt="Reaction Icon">
+              <h3>Reaction</h3>
+            </div>
+            <div class="right">
+              <p>80 <small>/ 100</small></p>
+            </div>
+          </li>
+
+          <li class="flex" id="memory">
+            <div class="left">
+              <img src="assets/images/icon-memory.svg" alt="Memory Icon">
+              <h3>Memory</h3>
+            </div>
+            <div class="right">
+              <p>92 <small>/ 100</small></p>
+            </div>
+          </li>
+
+          <li class="flex" id="verbal">
+            <div class="left">
+              <img src="assets/images/icon-verbal.svg" alt="Verbal Icon">
+              <h3>Verbal</h3>
+            </div>
+            <div class="right">
+              <p>61 <small>/ 100</small></p>
+            </div>
+          </li>
+
+          <li class="flex" id="visual">
+            <div class="left">
+              <img src="assets/images/icon-visual.svg" alt="Visual Icon">
+              <h3>Visual</h3>
+            </div>
+            <div class="right">
+              <p>72 <small>/ 100</small></p>
+            </div>
+          </li>
+        </ul>
+  <button class="btn" type="submit">Continue</button>
   </main>
   
-  <div class="attribution">
+  <footer class="footer">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Felipe Rossi</a>.
-  </div>
+  </footer>
 </body>
 </html>
