@@ -199,7 +199,7 @@ li.flex {
   }
 }
 
-@media screen and (min-width: 1279px) {
+@media screen and (width >= 1279px) {
   .cards-wrapper {
     flex-direction: row;
     justify-content: center;
@@ -216,11 +216,10 @@ li.flex {
     min-height: 32rem;
     border-radius: 2rem;
 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.241);
   }
 
   .blue-card {
-    
     width: 22rem;
     z-index: 1;
   }
@@ -230,12 +229,12 @@ li.flex {
     border-bottom-left-radius: 0;
     width: 22rem;
     margin-left: -.8rem;
-    z-index: -2;
+    z-index: 0;
     background: var(--white);
-  }
-
-  .btn {
-    margin-top: 2rem;
-    width: 100%;
+    
+    & > .btn {
+      margin-top: 2rem;
+      width: 100%;
+    }
   }
 }
