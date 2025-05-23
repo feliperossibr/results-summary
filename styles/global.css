@@ -28,6 +28,8 @@ html, body {
   width: 100%;
   height: auto;
   min-height: 100%;
+
+  background-color: #8ec5fc6a;
 }
 
 ul {
